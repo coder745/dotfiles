@@ -1,3 +1,5 @@
 [alias]
 hist = "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+graph = "log --graph --pretty='format:%C(red)%d%C(reset) %C(yellow)%h%C(reset) %ar %C(green)%aN%C(reset) %s'"
 st = status
+ac = !git add . && git commit -am
