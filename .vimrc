@@ -74,8 +74,14 @@ set smartcase
 
 "Set Color Scheme:
 try
-	colorscheme solarized8_dark
+    "Tomorrow-Night
+    "Tomorrow-Night-Eighties
+    "spring-night
+	"colorscheme sorcerer
+	"colorscheme codeschool
+	colorscheme bubblegum-256-dark
 catch
+    colorscheme elflord
 endtry
 
 "Remap ';' to ':' so I do not have to use SHIFT:
