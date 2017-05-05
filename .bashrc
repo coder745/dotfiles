@@ -1,8 +1,13 @@
 #### ALIASES ####
+theos="$(uname)"
 alias vi=vim
 export EDITOR=vi
 export HISTSIZE=1000
-alias ls='ls --color'
+
+if [ $theos = "Linux" ]; then
+    alias ls='ls --color'
+fi
+
 alias ll='ls -l'
 alias lsa='ls -lShF --color'
 alias cd..="cd .."
@@ -11,7 +16,6 @@ alias myip='curl ip.appspot.com'
 alias editHosts='sudo edit /etc/hosts' 
 alias reload='source ~/.bashrc'
 alias openports='sudo lsof -i | grep LISTEN' 
-theos="$(uname)"
 
 #### COLORS #####
 black='\e[0;30m'
@@ -45,6 +49,8 @@ if [ $theos = "Linux" ]; then
     }
 
     PS1="${cyan}\u@${brown}\h${stopc}${lightgray}($(ipaddr))${stopc}\$: "
+else
+    PS1="${cyan}\u@${brown}\h${stopc}\$: "
 fi
 
 
