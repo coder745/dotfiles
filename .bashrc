@@ -17,6 +17,12 @@ alias editHosts='sudo edit /etc/hosts'
 alias reload='source ~/.bashrc'
 alias openports='sudo lsof -i | grep LISTEN' 
 
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+alias wget='wget -c'
+
 #### COLORS #####
 black='\e[0;30m'
 blue='\e[0;34m'
