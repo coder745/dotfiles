@@ -11,11 +11,15 @@ fi
 alias ll='ls -l'
 alias lsa='ls -lShF --color'
 alias cd..="cd .."
+alias ..="cd .."
 alias cls='clear'
 alias myip='curl ip.appspot.com' 
 alias editHosts='sudo edit /etc/hosts' 
 alias reload='source ~/.bashrc'
 alias openports='sudo lsof -i | grep LISTEN' 
+
+alias cpu='top -o cpu'
+alias mem='top -o rsize'
 
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
@@ -56,7 +60,7 @@ if [ $theos = "Linux" ]; then
 
     PS1="${cyan}\u@${brown}\h${stopc}${lightgray}($(ipaddr))${stopc}\$: "
 else
-    PS1="${cyan}\u@${brown}\h${stopc}\$: "
+    PS1="${cyan}\u${stopc}@${brown}\h${stopc}\$: "
 fi
 
 
