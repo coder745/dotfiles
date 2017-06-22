@@ -52,16 +52,20 @@ if [ $theos = "Darwin" ]; then
     alias f='open -a Finder ./'
 fi
 
-#Only apply for Linux:
-if [ $theos = "Linux" ]; then
-    ipaddr() {
-        ip addr | grep inet | awk '{print $2}' | awk 'NR==3{ print; }'
-    }
+ipaddr() {
+    ip addr | grep inet | awk '{print $2}' | awk 'NR==3{ print; }'
+}
 
+#Only apply for Linux:
+: <<'END'
+if [ $theos = "Linux" ]; then
     PS1="${cyan}\u@${brown}\h${stopc}${lightgray}($(ipaddr))${stopc}\$: "
 else
     PS1="${cyan}\u${stopc}@${brown}\h${stopc}\$: "
 fi
+END
+
+PS1="\u@\h\$: "
 
 
 #### FUNCTIONS ####
