@@ -41,9 +41,9 @@ set expandtab
 set smarttab
 set autoindent
 set smartindent
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 
 filetype plugin indent on
 
@@ -74,14 +74,14 @@ set smartcase
 
 "Set Color Scheme:
 try
-    "Tomorrow-Night
-    "Tomorrow-Night-Eighties
-    "spring-night
-	"colorscheme sorcerer
-	"colorscheme codeschool
-	colorscheme bubblegum-256-dark
+  "Tomorrow-Night
+  "Tomorrow-Night-Eighties
+  "spring-night
+  "colorscheme sorcerer
+  "colorscheme codeschool
+  colorscheme bubblegum-256-dark
 catch
-    colorscheme elflord
+  colorscheme elflord
 endtry
 
 "Remap ';' to ':' so I do not have to use SHIFT:
