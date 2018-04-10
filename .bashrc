@@ -1,5 +1,5 @@
 #### ALIASES ####
-theos="$(uname)"
+theos=uname
 alias vi=vim
 export EDITOR=vi
 export HISTSIZE=1000

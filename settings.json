@@ -2,5 +2,17 @@
 {
     "editor.renderWhitespace": "boundary",
     "editor.formatOnSave": false,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "explorer.confirmDragAndDrop": false,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [";",";"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "vim.cmdLineInitialColon": true,
+    "vim.incsearch": false,
+    "vim.statusBarColorControl": true,
 }
