@@ -1,9 +1,8 @@
 // Place your settings in this file to overwrite the default settings
 {
     "editor.renderWhitespace": "boundary",
-    "editor.formatOnSave": false,
     "editor.tabSize": 2,
-    "explorer.confirmDragAndDrop": false,
+    "editor.lineNumbers": "relative",
     "vim.insertModeKeyBindings": [
         {
             "before": [";",";"],
