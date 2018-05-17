@@ -97,7 +97,7 @@ map <right> <nop>
 nmap <silent> ,/ :nohlsearch<CR>
 
 "Map ESC:
-imap ;; <Esc>
+imap ff <Esc>
 
 "Switching bewteen windows:
 map <C-j> <C-W>j
