@@ -3,10 +3,15 @@
     "editor.renderWhitespace": "boundary",
     "editor.tabSize": 2,
     "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
     "vim.insertModeKeyBindings": [
         {
-            "before": [";",";"],
-            "after": ["<Esc>"]
+          "before": ["j","k"],
+          "after": ["<Esc>"]
+        },
+        {
+          "before": ["k","j"],
+          "after": ["<Esc>"]
         }
     ],
     "telemetry.enableCrashReporter": false,
