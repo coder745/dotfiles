@@ -74,9 +74,9 @@ set smartcase
 
 "Set Color Scheme:
 try
-  "Tomorrow-Night
-  "Tomorrow-Night-Eighties
-  "spring-night
+  "colorscheme Tomorrow-Night
+  "colorscheme Tomorrow-Night-Eighties
+  "colorscheme spring-night
   "colorscheme sorcerer
   "colorscheme codeschool
   colorscheme bubblegum-256-dark
