@@ -144,3 +144,12 @@ set cmdheight=2
 
 "Keep column consistent when moving lines:
 set nostartofline
+
+"Move between beginning and ending keywords with %
+runtime macros/matchit.vim
+
+"Adds to end of file when searching with gf:
+augroup rubypath
+  autocmd!
+  autocmd FileType ruby setlocal suffixesadd+=.rb
+augroup END
