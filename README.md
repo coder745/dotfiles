@@ -10,6 +10,10 @@ This repository houses all of my dot files for Vim, Git, Bash, and other configu
 * [codeschool](https://github.com/antlypls/vim-colors-codeschool)
 * [vim-color-spring-night](https://github.com/rhysd/vim-color-spring-night)
 
+### Using the vimrc config:
+ * Setup Vundle by running through the setup [here](https://github.com/VundleVim/Vundle.vim)
+ * Launch a vim edit session and run `:PluginInstall` to install the plugins references in the `.vimrc` file.
+
 ### Updates To Do:
 * Double check the values in tmux config.
 * Add other config to tmux.
