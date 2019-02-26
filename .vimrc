@@ -1,8 +1,7 @@
-"Must be at the top of the file. Says use vim mode instead of vi:
-set nocompatible
+set nocompatible "Must be at the top - Vundle
+filetype off "Must be at the top - Vundle
 
-" Vundle Config
-filetype off                  " required
+"Vundle Config
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
@@ -10,48 +9,29 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugins
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'thoughtbot/vim-rspec'
-" End Plugins
+Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-commentary'
+Plugin 'ctrlpvim/ctrlp.vim'
 
+"Plugins have to be added before these two lines:
 call vundle#end()            " required
 filetype plugin indent on    " required
 " End Vundle Config
 
 set encoding=utf8
-
-"Relative numbers, but show the current line number:
-set relativenumber
-set number
-
-"More space around numbers:
-set numberwidth=2
-
-"Backspaces in insert mode:
-set backspace=eol,start,indent
-
-"Prevent blinking cursor:
-set gcr=a:blinkon0
-
-"Turn off sounds:
-set visualbell
-
-"Reload changed files:
-set autoread
-
-"Allows background buffers:
-set hidden
-
-"Enable syntax highlighting:
-syntax on
-
-"Change mapleader to comma:
-let mapleader=","
-
-"Disable swap files (use git instead):
-set nobackup
+set relativenumber " relative line numbers
+set number " show current line number
+set numberwidth=2 " More space around numbers:
+set backspace=eol,start,indent " Backspaces in insert mode:
+set gcr=a:blinkon0 " Prevent blinking cursor:
+set visualbell " Turn off sounds:
+set autoread " Reload changed files:
+set hidden " Allows background buffers:
+set nobackup " Disable swap files (use git instead):
 set nowb
 set noswapfile
-
-"Set Indentation:
 set expandtab
 set smarttab
 set autoindent
@@ -59,33 +39,33 @@ set smartindent
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
-
-filetype plugin indent on
-
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
+set nowrap " Prevent line wrapping:
+set foldmethod=indent " set folding:
+set foldnestmax=3 " set folding:
+set nofoldenable " set folding:
+set scrolloff=8 " set scrolling:
+set sidescrolloff=15 " set scrolling:
+set sidescroll=1 " set scrolling:
+set incsearch " searching:
+set hlsearch " searching:
+set ignorecase " searching:
+set smartcase " searching:
+set showcmd " Display command in bottom bar:
+set cursorline " Highlight the present line number:
+set wildmenu " Command Menu Autocomplete:
+set lazyredraw " Redraw the screen only when necessary:
+set showmatch " Highlight matching parenthesis and brackets:
+set ruler " Row/Column ruler:
+set magic " Special character pattern matching:
+set colorcolumn=80 " Column after 80 characters:
+set list " Highlight Spaces:
+set noerrorbells " Disable beep on error:
+set title " Set the title of the window to the current file being edited:
+set cmdheight=2 " Increases the height of the commandline:
+set nostartofline " Keep column consistent when moving lines:
 
-"Prevent line wrapping:
-set nowrap
-
-"Set folding:
-set foldmethod=indent
-set foldnestmax=3
-set nofoldenable
-
-"Reload .vimrc:
-nmap <silent> <leader>ev :e $MYVIMRC<CR>
-nmap <silent> <leader>sv :so $MYVIMRC<CR>
-
-"Set scrolling:
-set scrolloff=8
-set sidescrolloff=15
-set sidescroll=1
-
-"Set Searching:
-set incsearch
-set hlsearch
-set ignorecase
-set smartcase
+syntax on " Enable syntax highlighting:
 
 "Set Color Scheme:
 try
@@ -99,66 +79,38 @@ catch
   colorscheme elflord
 endtry
 
-"Remap ';' to ':' so I do not have to use SHIFT:
-nnoremap ; :
+"Change mapleader to comma:
+let mapleader=","
 
-"Disable Arrow Keys:
+nmap <leader>vr :sp $MYVIMRC<cr>
+nmap <leader>so :source $MYVIMRC<cr>
+nmap <silent> <leader>ev :e $MYVIMRC<CR> " edit .vimrc
+nmap <silent> <leader>sv :so $MYVIMRC<CR> " reload .vimrc:
+
+nnoremap ; : " Remap ';' to ':' so I do not have to use SHIFT:
+
+" Disable Arrow Keys:
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 
-"Clear Searches:
+" Clear Searches:
 nmap <silent> ,/ :nohlsearch<CR>
 
 "Map ESC:
 imap jk <Esc>
 imap kj <Esc>
 
-"Switching bewteen windows:
+" Allows me to move across wrapped lines:
+nmap k gk
+nmap j gj
+
+" Switching bewteen windows:
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-
-"Display command in bottom bar:
-set showcmd
-
-"Highlight the present line number:
-set cursorline
-
-"Command Menu Autocomplete:
-set wildmenu
-
-"Redraw the screen only when necessary:
-set lazyredraw
-
-"Highlight matching parenthesis and brackets:
-set showmatch
-
-"Row/Column ruler:
-set ruler
-
-"Special character pattern matching:
-set magic
-
-"Column after 80 characters:
-set colorcolumn=80
-
-"Highlight Spaces:
-set list
-
-"Disable beep on error:
-set noerrorbells
-
-"Set the title of the window to the current file being edited:
-set title
-
-"Increases the height of the commandline:
-set cmdheight=2
-
-"Keep column consistent when moving lines:
-set nostartofline
 
 "Move between beginning and ending keywords with %
 runtime macros/matchit.vim
@@ -172,6 +124,8 @@ augroup END
 "When windows is resized, refresh to keep balanced
 autocmd VimResized * :wincmd =
 
+nmap 0 ^
+
 "<C-w>= to re-balance after zooming:
 nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
@@ -181,3 +135,6 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+"Repeat.vim:
+silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
