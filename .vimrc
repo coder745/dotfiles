@@ -14,6 +14,12 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-commentary'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'baskerville/bubblegum'
+Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'rhysd/vim-color-spring-night'
+Plugin 'adlawson/vim-sorcerer'
+Plugin 'antlypls/vim-colors-codeschool'
 
 "Plugins have to be added before these two lines:
 call vundle#end()            " required
@@ -67,18 +73,6 @@ set nostartofline " Keep column consistent when moving lines:
 
 syntax on " Enable syntax highlighting:
 
-"Set Color Scheme:
-try
-  "colorscheme Tomorrow-Night
-  "colorscheme Tomorrow-Night-Eighties
-  "colorscheme spring-night
-  "colorscheme sorcerer
-  "colorscheme codeschool
-  colorscheme bubblegum-256-dark
-catch
-  colorscheme elflord
-endtry
-
 "Change mapleader to comma:
 let mapleader=","
 
@@ -102,9 +96,10 @@ nmap <silent> ,/ :nohlsearch<CR>
 imap jk <Esc>
 imap kj <Esc>
 
-" Allows me to move across wrapped lines:
-nmap k gk
-nmap j gj
+nmap k gk " allows moving across wrapped lines
+nmap j gj " allows moving across wrapped lines
+
+nmap 0 ^
 
 " Switching bewteen windows:
 map <C-j> <C-W>j
@@ -124,11 +119,22 @@ augroup END
 "When windows is resized, refresh to keep balanced
 autocmd VimResized * :wincmd =
 
-nmap 0 ^
-
 "<C-w>= to re-balance after zooming:
 nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
+
+" Color schemes I like for easy switching:
+try
+  " colorscheme Tomorrow-Night
+  " colorscheme Tomorrow-Night-Eighties
+  " colorscheme spring-night
+  " colorscheme sorcerer
+  " colorscheme codeschool
+  " colorscheme bubblegum-256-dark
+  colorscheme jellybeans
+catch
+  colorscheme elflord " allow to work before plugins have been installed
+endtry
 
 "RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
