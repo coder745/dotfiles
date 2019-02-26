@@ -20,6 +20,8 @@ Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'rhysd/vim-color-spring-night'
 Plugin 'adlawson/vim-sorcerer'
 Plugin 'antlypls/vim-colors-codeschool'
+" Plugin 'tpope/vim-endwise'
+" Plugin 'airblade/vim-gitgutter'
 
 "Plugins have to be added before these two lines:
 call vundle#end()            " required
@@ -71,7 +73,7 @@ set title " Set the title of the window to the current file being edited:
 set cmdheight=2 " Increases the height of the commandline:
 set nostartofline " Keep column consistent when moving lines:
 
-syntax on " Enable syntax highlighting:
+syntax on " Enable syntax highlighting
 
 "Change mapleader to comma:
 let mapleader=","
@@ -144,3 +146,10 @@ map <Leader>a :call RunAllSpecs()<CR>
 
 "Repeat.vim:
 silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
+
+"CTRLP:
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" git-gutter:
+let g:gitgutter_terminal_reports_focus=0
