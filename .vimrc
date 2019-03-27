@@ -20,8 +20,8 @@ Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'rhysd/vim-color-spring-night'
 Plugin 'adlawson/vim-sorcerer'
 Plugin 'antlypls/vim-colors-codeschool'
-" Plugin 'tpope/vim-endwise'
-" Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-endwise'
+Plugin 'airblade/vim-gitgutter'
 
 "Plugins have to be added before these two lines:
 call vundle#end()            " required
@@ -72,6 +72,9 @@ set noerrorbells " Disable beep on error:
 set title " Set the title of the window to the current file being edited:
 set cmdheight=2 " Increases the height of the commandline:
 set nostartofline " Keep column consistent when moving lines:
+set noesckeys
+set ttimeout
+set ttimeoutlen=1
 
 syntax on " Enable syntax highlighting
 
@@ -82,8 +85,9 @@ nmap <leader>vr :sp $MYVIMRC<cr>
 nmap <leader>so :source $MYVIMRC<cr>
 nmap <silent> <leader>ev :e $MYVIMRC<CR> " edit .vimrc
 nmap <silent> <leader>sv :so $MYVIMRC<CR> " reload .vimrc:
+nmap <leader>f :Vexplore<cr>
 
-nnoremap ; : " Remap ';' to ':' so I do not have to use SHIFT:
+"nnoremap ; : " Remap ';' to ':' so I do not have to use SHIFT:
 
 " Disable Arrow Keys:
 map <up> <nop>
@@ -98,8 +102,8 @@ nmap <silent> ,/ :nohlsearch<CR>
 imap jk <Esc>
 imap kj <Esc>
 
-nmap k gk " allows moving across wrapped lines
-nmap j gj " allows moving across wrapped lines
+" nmap k gk " allows moving across wrapped lines
+" nmap j gj " allows moving across wrapped lines
 
 nmap 0 ^
 
@@ -109,7 +113,7 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-"Move between beginning and ending keywords with %
+" Enable the matchit plugin - built in
 runtime macros/matchit.vim
 
 "Adds to end of file when searching with gf:
@@ -150,6 +154,20 @@ silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 "CTRLP:
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_use_caching = 1
 
 " git-gutter:
 let g:gitgutter_terminal_reports_focus=0
+
+" Prevent lookups with 'K'
+map K <Nop>
+
+highlight ColorColumn ctermbg=235
+
+" NETRW:
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25

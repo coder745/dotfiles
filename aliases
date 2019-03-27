@@ -11,6 +11,7 @@ alias lsa='ls -lShF --color'
 alias cd..="cd .."
 alias ..="cd .."
 alias cls='clear'
+alias c='clear'
 alias myip='curl ip.appspot.com' 
 alias editHosts='sudo edit /etc/hosts' 
 alias reload='source ~/.bashrc'
@@ -24,6 +25,8 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 alias wget='wget -c'
+
+alias gs='clear && git status'
 
 #### COLORS #####
 black='\e[0;30m'
@@ -77,6 +80,7 @@ mkfull() {
 #TMUX:
 alias tmuxa="tmux attach -t"
 alias tmuxl="tmux ls"
+alias tmuxn="tmux new-session -s"
 
 #Linux Only:
 if [ $theos = "Linux" ]; then
