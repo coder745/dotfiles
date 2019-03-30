@@ -61,6 +61,7 @@ set ignorecase " searching:
 set smartcase " searching:
 set showcmd " Display command in bottom bar:
 set cursorline " Highlight the present line number:
+set cursorcolumn " Highlight current column
 set wildmenu " Command Menu Autocomplete:
 set lazyredraw " Redraw the screen only when necessary:
 set showmatch " Highlight matching parenthesis and brackets:
