@@ -18,3 +18,5 @@ This repository houses all of my dot files for Vim, Git, Bash, and other configu
 * Double check the values in tmux config.
 * Add other config to tmux.
 * Add tmuxinator config.
+* Add instructions to 'stash' script (i.e. 'press "q" to exit, etc.).
+* Make 'stash' script more resiliant to errors (i.e. prevent from continuing when there are no stashes, prevent it continuing if a file number is selected for which there is no stashed file).
