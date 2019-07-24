@@ -17,6 +17,12 @@ This repository houses all of my dot files for Vim, Git, Bash, and other configu
 ### Copy config to home directory instructions:
 * Run the `copy_config.sh` file to create symbolic links for `.vimrc` and `.aliases`
   * `./copy_config.sh`
+* Reference `.git_aliases` from ~/.gitconfig file:
+  * Add this section to your .gitconfig file to load the aliases stored here:
+  * ```
+    [include]
+      path = /path/to/.git_aliases
+    ```
 
 ### Updates To Do:
 * Double check the values in tmux config.
