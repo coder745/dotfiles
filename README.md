@@ -24,12 +24,23 @@ This repository houses all of my dot files for Vim, Git, Bash, and other configu
       path = /path/to/.git_aliases
     ```
 
+### Files Here:
+* Files that must be copied over directly
+  * `.rubocop.yml`
+  * `settings.json`
+  * `.git_aliases`
+* Files that are loaded via `copy_config.sh` script:
+  * `.vimrc`
+  * `.aliases`
+
 ### Updates To Do:
 * Double check the values in tmux config.
 * Add other config to tmux.
 * Add tmuxinator config.
+* Add auto-save plugin to .vimrc.
 * Add instructions to 'stash' script (i.e. 'press "q" to exit, etc.).
-* Make 'stash' script more resiliant to errors (i.e. prevent from continuing when there are no stashes, prevent it continuing if a file number is selected for which there is no stashed file).
+* Make 'stash' script more resilient to errors (i.e. prevent from continuing when there are no stashes, prevent it continuing if a file number is selected for which there is no stashed file).
 * Make a bash function to create symbolic links in the `copy_config.sh` file.
 * Add a section to your .gitconfig file where you can reference the config in your `.gitconfig` file.
   * Add notes to your readme file about how to do this.
+* Add '.tmux.conf', 'init.vim' to 'copy_config.sh' script.
