@@ -39,16 +39,12 @@ This repository houses all of my dot files for Vim, Git, Bash, and other configu
   * `.tmux.conf`
 
 ### Updates To Do:
+* Figure out how to copy .vimrc to init.vim (the neovim config file).
+* Add a symbolic link creation of 'init.vim' to your 'copy_config' script.
 * Double check the values in tmux config.
-* Add other config to tmux.
 * Add tmuxinator config.
 * Add auto-save plugin to .vimrc.
-* Add instructions to 'stash' script (i.e. 'press "q" to exit, etc.).
-* Make 'stash' script more resilient to errors (i.e. prevent from continuing when there are no stashes, prevent it continuing if a file number is selected for which there is no stashed file).
 * Make a bash function to create symbolic links in the `copy_config.sh` file.
-* Add a section to your .gitconfig file where you can reference the config in your `.gitconfig` file.
-  * Add notes to your readme file about how to do this.
-* Add '.tmux.conf', 'init.vim' to 'copy_config.sh' script.
 
 #### *Creating a `.gitconfig` file:
 * Usually your .gitconfig file will be located in your home folder: `~/.gitconfig`. If not:
