@@ -1,22 +1,55 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.renderWhitespace": "boundary",
-    "editor.tabSize": 2,
-    "editor.lineNumbers": "relative",
-    "editor.minimap.enabled": false,
-    "vim.insertModeKeyBindings": [
-        {
-          "before": ["j","k"],
-          "after": ["<Esc>"]
-        },
-        {
-          "before": ["k","j"],
-          "after": ["<Esc>"]
-        }
-    ],
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "vim.cmdLineInitialColon": true,
-    "vim.incsearch": false,
-    "vim.statusBarColorControl": true,
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j","k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["k","j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "vim.cmdLineInitialColon": true,
+  "vim.incsearch": false,
+  "workbench.iconTheme": "eq-material-theme-icons",
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "zenMode.fullScreen": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.rulers": [
+    120
+  ],
+  "editor.renderLineHighlight": "all",
+  "emmet.includeLanguages": {
+    "rails": "erb"
+  },
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.acceptSuggestionOnEnter": "off",
+  "vim.enableNeovim": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f"
+  },
+  "explorer.confirmDelete": false,
+  "window.zoomLevel": 0,
+  "editor.lineNumbers": "relative",
+  "terminal.integrated.rendererType": "dom",
+  "editor.renderControlCharacters": true,
+  "gitlens.currentLine.enabled": false,
+  "vsicons.dontShowNewVersionMessage": true,
+  "auto-close-tag.enableAutoCloseTag": false,
+  "workbench.commandPalette.history": 200,
+  "vim.history": 200,
+  "files.autoSave": "onFocusChange",
+  "[ruby]": {
+    "editor.defaultFormatter": "misogi.ruby-rubocop"
+  }
 }

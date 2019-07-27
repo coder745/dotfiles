@@ -31,7 +31,7 @@ This repository houses all of my dot files for Vim, Git, Bash, and other configu
 ### Files Here:
 * Files that must be copied over directly
   * `.rubocop.yml`
-  * `settings.json`
+  * `settings.json` (some settings here require specific VS Code plugins to be installed)
   * `.git_aliases` (load it inside your '.gitconfig')
 * Files that are loaded via `copy_config.sh` script:
   * `.vimrc`
