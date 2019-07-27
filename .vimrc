@@ -51,6 +51,7 @@ set listchars=tab:>.,trail:.,extends:#,nbsp:.
 set nowrap " Prevent line wrapping:
 set foldmethod=indent " set folding:
 set foldnestmax=3 " set folding:
+set foldignore= " do not ignore any characters with fold
 set nofoldenable " set folding:
 set scrolloff=8 " set scrolling:
 set sidescrolloff=15 " set scrolling:
