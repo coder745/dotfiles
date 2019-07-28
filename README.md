@@ -44,7 +44,6 @@ This repository houses my dot files. If you see any useful configuration setting
 * Add tmuxinator config.
 * Add auto-save plugin to `.vimrc`.
 * Make a bash function to create symbolic links in the `copy_config.sh` file.
-* Setup the `.tmux.conf` script to work without a mouse and keyboard, by not loading the 'bind-key [-cnr] [-t key-table] key command' and 'mouse' commands when there is no GUI (i.e. when used on a Linux terminal).
 
 ### Vim Color Schemes Referenced in Config File:
 * [bubblegum](https://github.com/baskerville/bubblegum)
