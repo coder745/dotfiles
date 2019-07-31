@@ -40,13 +40,15 @@ This repository houses my dot files. If you see any useful configuration setting
   * `.aliases`
   * `.tmux.conf`
 
-### Updates To Do:
+### To Do:
 * Figure out how to copy `.vimrc` to init.vim (the neovim config file).
 * Add a symbolic link creation of `init.vim` to your `copy_config.sh` script.
 * Double check the values in `.tmux.config`.
 * Add tmuxinator config.
 * Add auto-save plugin to `.vimrc`.
 * Make a bash function to create symbolic links in the `copy_config.sh` file.
+* Install an auto-complete plugin for vim.
+* Optionally load in the commands for fzf depending on whether it is installed.
 
 ### Vim Color Schemes Referenced in Config File:
 * [bubblegum](https://github.com/baskerville/bubblegum)
