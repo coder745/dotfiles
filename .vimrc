@@ -112,6 +112,9 @@ nmap <silent> ,/ :nohlsearch<CR>
 imap jk <Esc>
 imap kj <Esc>
 
+"Map Tab to auto-complete:
+imap <Tab> <C-P>
+
 " nmap k gk " allows moving across wrapped lines
 " nmap j gj " allows moving across wrapped lines
 
