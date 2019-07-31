@@ -178,9 +178,9 @@ highlight ColorColumn ctermbg=235
 " NETRW:
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
+let g:netrw_browse_split = 0
 let g:netrw_altv = 1
-let g:netrw_winsize = 25
+" let g:netrw_winsize = 25
 
 " vim-auto-save plugin config:
 let g:auto_save = 1 " enable plugin on start:
