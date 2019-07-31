@@ -24,6 +24,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-scripts/vim-auto-save'
 Plugin 'junegunn/fzf.vim'
+Plugin 'itchyny/lightline.vim'
 
 "Plugins have to be added before these two lines:
 call vundle#end()            " required
@@ -34,6 +35,7 @@ set rtp+=/usr/local/opt/fzf " enable fzf (must have installed via homebrew)
 
 set encoding=utf8
 set relativenumber " relative line numbers
+set laststatus=2
 set number " show current line number
 set numberwidth=2 " More space around numbers:
 set backspace=eol,start,indent " Backspaces in insert mode:
