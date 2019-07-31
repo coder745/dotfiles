@@ -13,7 +13,7 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-commentary'
-Plugin 'ctrlpvim/ctrlp.vim'
+" Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'baskerville/bubblegum'
 Plugin 'chriskempson/vim-tomorrow-theme'
@@ -154,11 +154,11 @@ map <Leader>a :call RunAllSpecs()<CR>
 "Repeat.vim:
 silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 
-"CTRLP:
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-let g:ctrlp_use_caching = 1
+" CTRLP:
+" let g:ctrlp_map = '<c-p>'
+" let g:ctrlp_cmd = 'CtrlP'
+" let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+" let g:ctrlp_use_caching = 1
 
 " git-gutter:
 let g:gitgutter_terminal_reports_focus=0
