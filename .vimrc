@@ -22,6 +22,7 @@ Plugin 'adlawson/vim-sorcerer'
 Plugin 'antlypls/vim-colors-codeschool'
 Plugin 'tpope/vim-endwise'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-scripts/vim-auto-save'
 
 "Plugins have to be added before these two lines:
 call vundle#end()            " required
@@ -173,3 +174,9 @@ let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 25
+
+" vim-auto-save plugin config:
+let g:auto_save = 1 " enable plugin on start:
+let g:auto_save_no_updatetime = 1 " don't change 'updatetime' option
+let g:auto_save_in_insert_mode = 0 " disable auto-save with insert mode
+let g:auto_save_silent = 1 " don't display the autosave message
