@@ -25,6 +25,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-scripts/vim-auto-save'
 Plugin 'junegunn/fzf.vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'ycm-core/YouCompleteMe'
 
 "Plugins have to be added before these two lines:
 call vundle#end()            " required
@@ -113,7 +114,7 @@ imap jk <Esc>
 imap kj <Esc>
 
 "Map Tab to auto-complete:
-imap <Tab> <C-P>
+" imap <Tab> <C-P>
 
 " nmap k gk " allows moving across wrapped lines
 " nmap j gj " allows moving across wrapped lines

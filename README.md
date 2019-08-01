@@ -7,11 +7,13 @@ This repository houses my dot files. If you see any useful configuration setting
 ### 1. Install Git, Vim, and Tmux:
 * If you do not have `git`, `vim`, and `tmux` installed, lookup installation directions for your operating system.
 
-### 2. Setup Vundle and FZF:
+### 2. Setup Vundle and FZF and YouCompleteMe
  * Setup Vundle by running through the setup [here](https://github.com/VundleVim/Vundle.vim).
  * Setup FZF by walking through these two links:
    * https://github.com/junegunn/fzf
    * https://github.com/junegunn/fzf.vim
+  * Setup YouCompleteMe by walking through the installation instructions here:
+    * https://github.com/ycm-core/YouCompleteMeinding.pry
 
 ### 3. Copy Config  and Install Plugins:
 * Clone this repo and run the `./copy_config.sh` file to create symbolic links.
@@ -45,10 +47,7 @@ This repository houses my dot files. If you see any useful configuration setting
 * Add a symbolic link creation of `init.vim` to your `copy_config.sh` script.
 * Double check the values in `.tmux.config`.
 * Add tmuxinator config.
-* Add auto-save plugin to `.vimrc`.
 * Make a bash function to create symbolic links in the `copy_config.sh` file.
-* Install an auto-complete plugin for vim.
-* Optionally load in the commands for fzf depending on whether it is installed.
 
 ### Vim Color Schemes Referenced in Config File:
 * [bubblegum](https://github.com/baskerville/bubblegum)
