@@ -16,21 +16,15 @@ link_config() {
   fi
 }
 
-echo "Enter path to this directory (i.e. /home/joe)"
+backup_and_link() {
+  backup_config $2
+  link_config $1 $2
+}
 
+echo "Enter path to this directory (i.e. /home/joe)"
 read dir
 
-echo "Backup and create link for vimrc file"
-
-backup_config ".vimrc"
-link_config $dir ".vimrc"
-
-echo "Backup and the copy alias file to home folder."
-
-backup_config ".aliases"
-link_config $dir ".aliases"
-
-echo "Backup and the copy tmux file to home folder."
-
-backup_config ".tmux.conf"
-link_config $dir ".tmux.conf"
+echo "Backup and link .vimrc, .aliases, and .tmux.conf"
+backup_and_link $dir ".vimrc"
+backup_and_link $dir ".aliases"
+backup_and_link $dir ".tmux.conf"
