@@ -1,25 +1,5 @@
 #!/bin/bash
-backup_config() {
-  file=$1
-  if [ -f ~/$file ]; then
-    backup_date=$(date +%F_%R)
-    cp ~/$file ~/"$file"_"$backup_date"
-    rm ~/$file
-  fi
-}
-
-link_config() {
-  directory=$1
-  file=$2
-  if [ ! -L ~/$file ]; then
-    ln -s $directory/$file ~/$file
-  fi
-}
-
-backup_and_link() {
-  backup_config $2
-  link_config $1 $2
-}
+source "./utility_functions.sh"
 
 echo "Enter path to this directory (i.e. /home/joe)"
 read dir
