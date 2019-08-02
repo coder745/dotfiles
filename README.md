@@ -8,7 +8,8 @@ This repository houses my dot files. If you see any useful configuration setting
 * If you do not have `git`, `vim`, and `tmux` installed, lookup installation directions for your operating system.
 
 ### 2. Setup Vundle and FZF and YouCompleteMe
- * Setup Vundle by running through the setup [here](https://github.com/VundleVim/Vundle.vim).
+ * Setup Vundle by running through the setup here:
+   * https://github.com/VundleVim/Vundle.vim
  * Setup FZF by walking through these two links:
    * https://github.com/junegunn/fzf
    * https://github.com/junegunn/fzf.vim
