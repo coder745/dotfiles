@@ -20,7 +20,8 @@ This repository houses my dot files. If you see any useful configuration setting
 * Clone this repo and run the `./copy_config.sh` file to create symbolic links.
  * Launch a vim edit session by typing `vim` in the terminal, and run `:PluginInstall` to install the plugins referenced in the `~/.vimrc` file.
 * Add `source $HOME/.aliases` to the bottom of your `~/.bashrc` file.
-  * Run `source ~/.bashrc` to reload your aliases (or restart your terminal).
+  * If you are running another shell like 'zsh', you will need to add it to it's config file as well.
+  * Run `source ~/.bashrc` or `source ~/.zshrc` to reload your aliases (or restart your terminal).
 
 ### 4. Add a Reference the Git Config:
 * Reference `.git_aliases` from `~/.gitconfig` file:
