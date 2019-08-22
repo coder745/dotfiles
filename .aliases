@@ -28,6 +28,9 @@ alias wget='wget -c'
 
 alias gs='clear && git status'
 
+#### Programming ####
+alias be='bundle exec'
+
 #### COLORS #####
 black='\e[0;30m'
 blue='\e[0;34m'
