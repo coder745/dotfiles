@@ -5,12 +5,22 @@
   "editor.minimap.enabled": false,
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j","k"],
-      "after": ["<Esc>"]
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     },
     {
-      "before": ["k","j"],
-      "after": ["<Esc>"]
+      "before": [
+        "k",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   "telemetry.enableCrashReporter": false,
@@ -48,8 +58,19 @@
   "auto-close-tag.enableAutoCloseTag": false,
   "workbench.commandPalette.history": 200,
   "vim.history": 200,
-  "files.autoSave": "onFocusChange",
   "[ruby]": {
     "editor.defaultFormatter": "misogi.ruby-rubocop"
-  }
+  },
+  "editor.formatOnSave": true,
+  "jestrunner.debugOptions": {
+    "args": [
+      "--no-cache"
+    ],
+    "sourcemaps": "inline",
+    "disableOptimisticBPs": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "vim.neovimPath": "/usr/local/bin/nvim",
+  "vim.leader": ",",
+  "vim.vimrc.enable": true
 }

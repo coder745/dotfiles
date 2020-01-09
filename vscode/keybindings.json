@@ -1,0 +1,27 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "cmd+, s",
+    "command": "extension.runSpecLine"
+  },
+  {
+    "key": "cmd+l",
+    "command": "-extension.runSpecLine"
+  },
+  {
+    "key": "cmd+, a",
+    "command": "extension.runAllSpecFiles"
+  },
+  {
+    "key": "cmd+r",
+    "command": "-extension.runAllSpecFiles"
+  },
+  {
+    "key": "cmd+, t",
+    "command": "extension.runFileSpecs"
+  },
+  {
+    "key": "shift+cmd+t",
+    "command": "-extension.runFileSpecs"
+  }
+]

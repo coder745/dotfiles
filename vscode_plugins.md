@@ -1,0 +1,35 @@
+- [Auto Close Tag](https://github.com/formulahendry/vscode-auto-close-tag.git)
+- [Better Comments](https://github.com/aaron-bond/better-comments)
+- [Bookmarks](https://github.com/alefragnani/vscode-bookmarks.git)
+- [Code Spell Checker](https://github.com/streetsidesoftware/vscode-spell-checker)
+- [Color Highlight](https://github.com/naumovs/vscode-ext-color-highlight.git)
+- [Docker](https://github.com/microsoft/vscode-docker)
+- [EditorConfig for VS Code](https://github.com/editorconfig/editorconfig-vscode.git)
+- [Highlight Matching Tag](https://github.com/vincaslt/vscode-highlight-matching-tag)
+- [Indenticator](https://github.com/SirTori/indenticator)
+- [Jest](https://github.com/jest-community/vscode-jest)
+- [Jest Runner](https://github.com/firsttris/vscode-jest-runner.git)
+- [One Dark Pro](https://github.com/Binaryify/OneDark-Pro)
+- [Output Colorizer](https://github.com/IBM-Bluemix/vscode-log-output-colorizer.git)
+- [Rails Run Specs](https://github.com/noku/rails-run-spec-vscode.git)
+- [Ruby Solargraph](https://github.com/castwide/vscode-solargraph)
+- [ruby-rubocop](https://github.com/misogi/vscode-ruby-rubocop.git)
+- [SVG Viewer](https://github.com/cssho/vscode-svgviewer.git)
+- [Terminal](https://github.com/formulahendry/vscode-terminal.git)
+- [Todo Tree](https://github.com/Gruntfuggly/todo-tree)
+- [Vim](https://github.com/VSCodeVim/Vim.git)
+- [vscode-icons](https://github.com/vscode-icons/vscode-icons)
+- [Prettier - Code formatter](https://github.com/prettier/prettier-vscode.git)
+
+[Node.js Extension Pack](https://github.com/waderyan/nodejs-extension-pack) (dependencies listed below):
+
+- [ESLint](https://github.com/Microsoft/vscode-eslint.git)
+- [JavaScript (ES6) code snippets](https://github.com/xabikos/vscode-javascript)
+- [npm](https://github.com/Microsoft/vscode-npm-scripts.git)
+- [npm Intellisense](https://github.com/ChristianKohler/NpmIntellisense.git)
+- [Path Intellisense](https://github.com/ChristianKohler/PathIntellisense.git)
+- [Search node_modules](https://github.com/jasonnutter/search-node-modules)
+
+[Ruby](https://github.com/rubyide/vscode-ruby.git) (dependencies listed below):
+
+- [VSCode Ruby](https://github.com/rubyide/vscode-ruby)
