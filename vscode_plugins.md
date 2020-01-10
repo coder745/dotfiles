@@ -11,6 +11,7 @@
 - [Jest Runner](https://github.com/firsttris/vscode-jest-runner.git)
 - [One Dark Pro](https://github.com/Binaryify/OneDark-Pro)
 - [Output Colorizer](https://github.com/IBM-Bluemix/vscode-log-output-colorizer.git)
+- [Prettier - Code formatter](https://github.com/prettier/prettier-vscode.git)
 - [Rails Run Specs](https://github.com/noku/rails-run-spec-vscode.git)
 - [Ruby Solargraph](https://github.com/castwide/vscode-solargraph)
 - [ruby-rubocop](https://github.com/misogi/vscode-ruby-rubocop.git)
@@ -19,7 +20,6 @@
 - [Todo Tree](https://github.com/Gruntfuggly/todo-tree)
 - [Vim](https://github.com/VSCodeVim/Vim.git)
 - [vscode-icons](https://github.com/vscode-icons/vscode-icons)
-- [Prettier - Code formatter](https://github.com/prettier/prettier-vscode.git)
 
 [Node.js Extension Pack](https://github.com/waderyan/nodejs-extension-pack) (dependencies listed below):
 
