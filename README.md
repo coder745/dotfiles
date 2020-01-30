@@ -15,8 +15,6 @@ This repository houses my dot files. If you see any useful configuration setting
 - Setup FZF by walking through these two links:
   - https://github.com/junegunn/fzf
   - https://github.com/junegunn/fzf.vim
-- Setup YouCompleteMe by walking through the installation instructions here:
-  - https://github.com/ycm-core/YouCompleteMeinding.pry
 
 ### 3. Copy Config and Install Plugins:
 

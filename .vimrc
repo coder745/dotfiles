@@ -25,7 +25,6 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-scripts/vim-auto-save'
 Plugin 'junegunn/fzf.vim'
 Plugin 'itchyny/lightline.vim'
-" Plugin 'ycm-core/YouCompleteMe'
 
 "Plugins have to be added before these two lines:
 call vundle#end()            " required
