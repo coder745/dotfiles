@@ -11,9 +11,7 @@ backup_config() {
 link_config() {
   directory=$1
   file=$2
-  if [ ! -L ~/$file ]; then
-    ln -s $directory/$file ~/$file
-  fi
+  ln -s $directory/$file ~/$file
 }
 
 backup_and_link() {

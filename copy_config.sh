@@ -1,7 +1,8 @@
 #!/bin/bash
 source "./utility_functions.sh"
 
-echo "Enter path to this directory (i.e. /home/joe)"
+current_dir=`pwd`
+echo "Enter path to this directory (i.e. $current_dir)"
 read dir
 
 echo "Backup and link: .vimrc, .aliases, and .tmux.conf"
