@@ -60,13 +60,6 @@ This repository houses my dot files. If you see any useful configuration setting
   - `.aliases`
   - `.tmux.conf`
 
-### To Do:
-
-- Figure out how to copy `.vimrc` to init.vim (the neovim config file).
-- Add a symbolic link creation of `init.vim` to your `copy_config.sh` script.
-- Double check the values in `.tmux.config`.
-- Add tmuxinator config.
-
 ### Vim Color Schemes Referenced in Config File:
 
 - [bubblegum](https://github.com/baskerville/bubblegum)
