@@ -30,6 +30,7 @@ alias gs='clear && git status'
 
 #### Programming ####
 alias be='bundle exec'
+alias byr='bundle install && yarn install --check-files && rails s'
 
 #### COLORS #####
 black='\e[0;30m'
