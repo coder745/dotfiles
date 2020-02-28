@@ -42,6 +42,11 @@ This repository houses my dot files. If you see any useful configuration setting
   - Windows: `C:\Users\username\AppData\Roaming\Code\User`
 - Then install the plugins that I have listed in the `vscode_plugins.md` file.
 
+### 6. Add the scripts repo to your file path:
+
+- If you want access to the scripts in the `scripts` repo, add that to your file path by editing your `~/.bashrc` and adding a line like this:
+  - `export PATH="$PATH:$HOME/path/to/scripts"`
+
 ---
 
 ### Files Stored in Repo:
