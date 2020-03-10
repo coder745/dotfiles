@@ -1,4 +1,7 @@
-#### ALIASES ####
+#### ENVIRONMENT VARIABLES ####
+export DOCKER_HIDE_LEGACY_COMMANDS=true
+
+#### #ALIASES ####
 theos=uname
 alias vi=vim
 # alias vim=nvim
