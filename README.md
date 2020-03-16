@@ -23,6 +23,9 @@ This repository houses my dot files. If you see any useful configuration setting
 - Add `source $HOME/.aliases` to the bottom of your `~/.bashrc` file.
   - If you are running another shell like 'zsh', you will need to add it to it's config file as well.
   - Run `source ~/.bashrc` or `source ~/.zshrc` to reload your aliases (or restart your terminal).
+- Do the same for `.functions`.
+- Do the same for `.terminal_changes`.
+- Make sure these are added in the correct order (bottom to top): `.functions`, `.aliases`, `.terminal_changes`.
 
 ### 4. Add a Reference the Git Config:
 
@@ -63,6 +66,8 @@ This repository houses my dot files. If you see any useful configuration setting
 - Files that are loaded via `copy_config.sh` script:
   - `.vimrc`
   - `.aliases`
+  - `.functions`
+  - `.terminal_changes`
   - `.tmux.conf`
 
 ### Vim Color Schemes Referenced in Config File:
