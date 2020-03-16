@@ -5,6 +5,11 @@ current_dir=`pwd`
 echo "Enter path to this directory (i.e. $current_dir)"
 read dir
 
+if [ -z "$dir" ]
+then
+  dir=$current_dir
+fi
+
 echo "Backup and link: .vimrc, .aliases, .functions, .terminal_changes, and .tmux.conf"
 backup_and_link $dir ".vimrc"
 backup_and_link $dir ".aliases"
