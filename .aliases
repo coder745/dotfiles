@@ -35,6 +35,7 @@ alias cb='git branch | grep "*"'
 
 #### Programming ####
 alias be='bundle exec'
+alias ber='bundle exec rspec'
 alias byr='bundle install && yarn install --check-files && rails s'
 
 #### COLORS #####
