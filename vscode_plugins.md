@@ -20,6 +20,7 @@
 - [Todo Tree](https://github.com/Gruntfuggly/todo-tree)
 - [Vim](https://github.com/VSCodeVim/Vim.git)
 - [vscode-icons](https://github.com/vscode-icons/vscode-icons)
+- [Remote - Containers](https://github.com/Microsoft/vscode-remote-release)
 
 [Node.js Extension Pack](https://github.com/waderyan/nodejs-extension-pack) (dependencies listed below):
 
