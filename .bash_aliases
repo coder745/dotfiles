@@ -16,6 +16,7 @@ alias ..="cd .."
 alias cls='clear'
 alias c='clear'
 alias myip='curl ip.appspot.com' 
+alias att='attach.py'
 alias editHosts='sudo edit /etc/hosts' 
 alias reload='source ~/.bashrc'
 alias openports='sudo lsof -i | grep LISTEN' 
