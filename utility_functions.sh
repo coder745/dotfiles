@@ -11,7 +11,7 @@ backup_config() {
 link_config() {
   directory=$1
   file=$2
-  ln -s $directory/$file ~/$file
+  ln $directory/$file ~/$file
 }
 
 backup_and_link() {
