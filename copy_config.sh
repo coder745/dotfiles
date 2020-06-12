@@ -10,7 +10,7 @@ then
   dir=$current_dir
 fi
 
-echo "Backup and link: .vimrc, .bash_aliases, .functions, .terminal_changes, and .tmux.conf"
+echo "Backup and copy: .vimrc, .bash_aliases, .functions, .terminal_changes, and .tmux.conf"
 backup_and_link $dir ".vimrc"
 backup_and_link $dir ".bash_aliases"
 backup_and_link $dir ".functions"
