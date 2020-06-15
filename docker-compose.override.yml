@@ -1,0 +1,7 @@
+version: "3"
+services:
+  dev:
+    volumes:
+      - "${HOME}/.functions:/root/.functions"
+      - "${HOME}/.terminal_changes:/root/.terminal_changes"
+
