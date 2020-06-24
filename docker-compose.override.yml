@@ -1,12 +1,11 @@
 version: "3"
 services:
   dev:
-   command: /bin/bash && source ~/.bashrc
-    volumes:
-      - "${HOME}/.bash_aliases:/root/.bash_aliases"
-      - "${HOME}/.bashrc:/root/.bashrc"
-      - "${HOME}/.vim:/root/.vim/"
-      - "${HOME}/.vimrc:/root/.vimrc"
-      - "${HOME}/.tmux.conf:/root/.tmux.conf"
-      - "${HOME}/.functions:/root/.functions"
-      - "${HOME}/.terminal_changes:/root/.terminal_changes"
+   volumes:
+     - "${HOME}/.bash_aliases:/root/.bash_aliases"
+     - "${HOME}/.bashrc:/root/.bashrc"
+     - "${HOME}/.vim:/root/.vim/"
+     - "${HOME}/.vimrc:/root/.vimrc"
+     - "${HOME}/.tmux.conf:/root/.tmux.conf"
+     - "${HOME}/.functions:/root/.functions"
+     - "${HOME}/.terminal_changes:/root/.terminal_changes"
