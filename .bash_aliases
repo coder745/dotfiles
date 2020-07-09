@@ -31,6 +31,7 @@ alias fgrep='fgrep --color=auto'
 alias wget='wget -c'
 
 alias gs='clear && git status'
+alias gss='git stash save'
 
 alias cb='git branch | grep "*"'
 alias cleanbranches='git branch | grep -v master | xargs git branch -D'
