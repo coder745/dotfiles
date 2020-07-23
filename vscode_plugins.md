@@ -21,6 +21,7 @@
 - [Vim](https://github.com/VSCodeVim/Vim.git)
 - [vscode-icons](https://github.com/vscode-icons/vscode-icons)
 - [Remote - Containers](https://github.com/Microsoft/vscode-remote-release)
+- [Python](https://github.com/Microsoft/vscode-python)
 
 [Node.js Extension Pack](https://github.com/waderyan/nodejs-extension-pack) (dependencies listed below):
 
