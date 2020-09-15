@@ -4,3 +4,4 @@
     st = status -sb
     ac = !git add . && git commit -am
     sl = "stash list --date=local"
+    stats = diff --shortstat
