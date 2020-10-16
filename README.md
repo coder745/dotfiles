@@ -20,15 +20,22 @@ This repository houses my dot files. If you see any useful configuration setting
 
 - Clone this repo and run the `./copy_config.sh` file to create symbolic links.
 - Launch a vim edit session by typing `vim` in the terminal, and run `:PluginInstall` to install the plugins referenced in the `~/.vimrc` file.
-- Add 
-   `if [ -f ~/.bash_aliases ]; then
+- Add this to the bottom of your `~/.bashrc` file.
+   ```bash
+   if [ -f ~/.bash_aliases ]; then
       source ~/.bash_aliases
-    fi`
-    to the bottom of your `~/.bashrc` file.
+    fi
+    
+   if [ -f ~/.functions ]; then
+      source ~/.functions
+    fi
+
+   if [ -f ~/.terminal_changes ]; then
+      source ~/.terminal_changes
+    fi
+   ```
   - If you are running another shell like 'zsh', you will need to add it to it's config file as well.
   - Run `source ~/.bashrc` or `source ~/.zshrc` to reload your aliases (or restart your terminal).
-- Do the same for `.functions`.
-- Do the same for `.terminal_changes`.
 - Make sure these are added in the correct order (bottom to top): `.functions`, `.aliases`, `.terminal_changes`.
 
 ### 4. Add a Reference the Git Config:
