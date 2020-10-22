@@ -17,6 +17,7 @@ alias cls='clear'
 alias c='clear'
 alias myip='curl ip.appspot.com' 
 alias att="attach.py"
+alias attc="attach.py raneto,kanboard_kanboard_1"
 alias gen="generate-email.py"
 alias editHosts='sudo edit /etc/hosts' 
 alias reload='source ~/.bashrc'
