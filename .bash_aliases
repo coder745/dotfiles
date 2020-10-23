@@ -11,6 +11,7 @@ export HISTSIZE=1000
 
 alias ll='ls -l'
 alias lsa='ls -lShF --color'
+alias sym='ls -l | grep lrw'
 alias cd..="cd .."
 alias ..="cd .."
 alias cls='clear'
