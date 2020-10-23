@@ -61,6 +61,11 @@ This repository houses my dot files. If you see any useful configuration setting
 - If you want access to the scripts in the `scripts` repo, add that to your file path by editing your `~/.bashrc` and adding a line like this:
   - `export PATH="$PATH:$HOME/path/to/scripts"`
 
+### 7. Add the git container to your file path:
+  - `cd /path/to/repos`
+  - `git clone git@github.com:joshayoung/git-container.git`
+  - `export PATH="$PATH:$HOME/path/to/git-container"`
+
 ---
 
 ### Files Stored in Repo:
