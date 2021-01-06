@@ -24,7 +24,7 @@ alias editHosts='sudo edit /etc/hosts'
 alias reload='source ~/.bashrc'
 alias openports='sudo lsof -i | grep LISTEN' 
 alias ctags="`brew --prefix`/bin/ctags"
-alias index_tags=`ctags -R -f ./.git/tags .`"
+alias index_tags="`ctags -R -f ./.git/tags .`"
 
 alias cpu='top -o cpu'
 alias mem='top -o rsize'

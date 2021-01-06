@@ -117,6 +117,8 @@ nmap <leader>f :Vexplore<cr>
 
 " map ; :Files<CR> " map for fzf
 
+map ; :CtrlP<CR>
+
 " Disable Arrow Keys:
 map <up> <nop>
 map <down> <nop>
