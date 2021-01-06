@@ -13,7 +13,7 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-commentary'
-" Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'chriskempson/vim-tomorrow-theme'
@@ -22,6 +22,7 @@ Plugin 'airblade/vim-gitgutter'
 " Plugin 'vim-scripts/vim-auto-save'
 " Plugin 'junegunn/fzf.vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'preservim/tagbar.vim'
 " Plugin 'SirVer/ultisnips'
 
 " Colors
@@ -100,6 +101,12 @@ syntax on " Enable syntax highlighting
 "Change mapleader to comma:
 let mapleader=","
 
+" Tagbar:
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
+
+" Search for tags with ctrlp:
+nnoremap <leader>. :CtrlPTag<cr>
+
 nmap <leader>vr :sp $MYVIMRC<cr>
 nmap <leader>so :source $MYVIMRC<cr>
 nmap <silent> <leader>ev :e $MYVIMRC<CR> " edit .vimrc
@@ -176,10 +183,10 @@ map <Leader>a :call RunAllSpecs()<CR>
 silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 
 " CTRLP:
-" let g:ctrlp_map = '<c-p>'
-" let g:ctrlp_cmd = 'CtrlP'
-" let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-" let g:ctrlp_use_caching = 1
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_use_caching = 1
 
 " git-gutter:
 let g:gitgutter_terminal_reports_focus=0
