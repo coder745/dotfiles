@@ -22,7 +22,7 @@ Plugin 'airblade/vim-gitgutter'
 " Plugin 'vim-scripts/vim-auto-save'
 Plugin 'junegunn/fzf.vim'
 Plugin 'itchyny/lightline.vim'
-Plugin 'SirVer/ultisnips'
+" Plugin 'SirVer/ultisnips'
 
 " Colors
 Plugin 'nanotech/jellybeans.vim'
@@ -32,10 +32,10 @@ Plugin 'adlawson/vim-sorcerer'
 Plugin 'antlypls/vim-colors-codeschool'
 
 " ultisnips config:
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-let g:UltiSnipsEditSplit="vertical"
+" let g:UltiSnipsExpandTrigger="<tab>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" let g:UltiSnipsEditSplit="vertical"
 
 "Plugins have to be added before these two lines:
 call vundle#end()            " required

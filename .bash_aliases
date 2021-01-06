@@ -23,6 +23,7 @@ alias gt="git.sh"
 alias editHosts='sudo edit /etc/hosts' 
 alias reload='source ~/.bashrc'
 alias openports='sudo lsof -i | grep LISTEN' 
+alias ctags="`brew --prefix`/bin/ctags"
 
 alias cpu='top -o cpu'
 alias mem='top -o rsize'
