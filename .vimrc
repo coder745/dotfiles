@@ -20,7 +20,7 @@ Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'tpope/vim-endwise'
 Plugin 'airblade/vim-gitgutter'
 " Plugin 'vim-scripts/vim-auto-save'
-Plugin 'junegunn/fzf.vim'
+" Plugin 'junegunn/fzf.vim'
 Plugin 'itchyny/lightline.vim'
 " Plugin 'SirVer/ultisnips'
 
@@ -42,7 +42,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 " End Vundle Config
 
-set rtp+=/usr/local/opt/fzf " enable fzf (must have installed via homebrew)
+" set rtp+=/usr/local/opt/fzf " enable fzf (must have installed via homebrew)
 
 set encoding=utf8
 set relativenumber " relative line numbers
@@ -108,7 +108,7 @@ nmap <leader>f :Vexplore<cr>
 
 "nnoremap ; : " Remap ';' to ':' so I do not have to use SHIFT:
 
-map ; :Files<CR> " map for fzf
+" map ; :Files<CR> " map for fzf
 
 " Disable Arrow Keys:
 map <up> <nop>
