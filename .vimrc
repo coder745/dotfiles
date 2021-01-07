@@ -24,6 +24,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'preservim/tagbar.vim'
 " Plugin 'SirVer/ultisnips'
+Plugin 'craigemery/vim-autotag'
 
 " Colors
 Plugin 'nanotech/jellybeans.vim'
