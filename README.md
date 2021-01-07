@@ -66,6 +66,9 @@ This repository houses my dot files. If you see any useful configuration setting
   - `git clone git@github.com:joshayoung/git-container.git`
   - `export PATH="$PATH:$HOME/path/to/git-container"`
 
+
+### 8. Set git to use your global ignore file:
+  - `git config --global core.excludesfile $HOME/.global_ignore`
 ---
 
 ### Files Stored in Repo:
