@@ -32,6 +32,11 @@ Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 " Plugin 'ryanoasis/vim-devicons'
 
+" Code Plugins:
+Plugin 'neoclide/coc.nvim'
+Plugin 'w0rp/ale'
+Plugin 'sheerun/vim-polyglot'
+
 " Colors
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'baskerville/bubblegum'
@@ -127,7 +132,7 @@ nmap <leader>f :Vexplore<cr>
 
 "nnoremap ; : " Remap ';' to ':' so I do not have to use SHIFT:
 
-map ; :Files<CR> " map for fzf
+map ; :Files<CR>
 
 " map ; :CtrlP<CR>
 
