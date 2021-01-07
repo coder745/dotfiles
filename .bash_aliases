@@ -4,7 +4,7 @@ export DOCKER_HIDE_LEGACY_COMMANDS=true
 #### #ALIASES ####
 theos=uname
 alias vi=vim
-# alias vim=nvim
+alias vim=nvim
 export EDITOR=vi
 export HISTSIZE=1000
 

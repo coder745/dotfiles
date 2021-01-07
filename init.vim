@@ -127,7 +127,7 @@ nmap <leader>f :Vexplore<cr>
 
 "nnoremap ; : " Remap ';' to ':' so I do not have to use SHIFT:
 
-map ; :Files<CR>
+map ; :Files<CR> " map for fzf
 
 " map ; :CtrlP<CR>
 

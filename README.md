@@ -4,9 +4,9 @@ This repository houses my dot files. If you see any useful configuration setting
 
 ## - Usage Instructions -
 
-### 1. Install Git, Vim, and Tmux:
+### 1. Install Git, Vim, CTags, AG, Tmux,  and node:
 
-- If you do not have `git`, `vim`, `universal ctags` `the_silver_searcher (ag)`, and `tmux` installed, lookup installation directions for your operating system.
+- If you do not have `git`, `vim`, `universal ctags` `the_silver_searcher (ag)`, `tmux`, and `node` installed, lookup installation directions for your operating system.
 
 ### 2. Setup Vundle and FZF and YouCompleteMe
 
