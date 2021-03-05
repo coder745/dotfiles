@@ -39,7 +39,7 @@ alias gs='clear && git status'
 alias gss='git stash save'
 
 alias cb='git branch | grep "*"'
-alias cleanbranches='git branch | sed -e 's/^[ ]*//' | grep -ivE "^\* master|^master$" | xargs git branch -d'
+alias cleanbranches='git branch | sed -e 's/^[ ]*//' | grep -ivE "^\* master|^master$|^\* main|^main$" | xargs git branch -d'
 
 #### Programming ####
 alias be='bundle exec'
