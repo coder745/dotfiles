@@ -23,6 +23,8 @@
 - [Remote - Containers](https://github.com/Microsoft/vscode-remote-release)
 - [Python](https://github.com/Microsoft/vscode-python)
 - [Test Explorer](https://github.com/hbenl/vscode-test-explorer.git)
+- [vscode-spring-initializr](https://github.com/Microsoft/vscode-spring-initializr)
+- [vscode-java-pack](https://github.com/Microsoft/vscode-java-pack)
 
 [Node.js Extension Pack](https://github.com/waderyan/nodejs-extension-pack) (dependencies listed below):
 
