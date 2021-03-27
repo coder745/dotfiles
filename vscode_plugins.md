@@ -25,6 +25,8 @@
 - [Test Explorer](https://github.com/hbenl/vscode-test-explorer.git)
 - [vscode-spring-initializr](https://github.com/Microsoft/vscode-spring-initializr)
 - [vscode-java-pack](https://github.com/Microsoft/vscode-java-pack)
+- [Spring Boot Tools](https://github.com/spring-projects/sts4.git)
+- [Spring Boot Dashboard](https://github.com/Microsoft/vscode-spring-boot-dashboard)
 
 [Node.js Extension Pack](https://github.com/waderyan/nodejs-extension-pack) (dependencies listed below):
 
