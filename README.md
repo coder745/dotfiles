@@ -61,13 +61,18 @@ This repository houses my dot files. If you see any useful configuration setting
 - If you want access to the scripts in the `scripts` repo, add that to your file path by editing your `~/.bashrc` and adding a line like this:
   - `export PATH="$PATH:$HOME/path/to/scripts"`
 
-### 7. Add the git container to your file path:
+### 7. Add the local scripts repo to your file path:
+
+- If you want access to the local scripts in the `scripts-local` repo, add that to your file path by editing your `~/.bashrc` and adding a line like this:
+  - `export PATH="$PATH:$HOME/path/to/scripts-local"`
+
+### 8. Add the git container to your file path:
   - `cd /path/to/repos`
   - `git clone git@github.com:joshayoung/git-container.git`
   - `export PATH="$PATH:$HOME/path/to/git-container"`
 
 
-### 8. Set git to use your global ignore file:
+### 9. Set git to use your global ignore file:
   - `git config --global core.excludesfile $HOME/.global_ignore`
 ---
 
