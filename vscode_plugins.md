@@ -27,6 +27,7 @@
 - [vscode-java-pack](https://github.com/Microsoft/vscode-java-pack)
 - [Spring Boot Tools](https://github.com/spring-projects/sts4.git)
 - [Spring Boot Dashboard](https://github.com/Microsoft/vscode-spring-boot-dashboard)
+- [C#](https://github.com/OmniSharp/omnisharp-vscode)
 
 [Node.js Extension Pack](https://github.com/waderyan/nodejs-extension-pack) (dependencies listed below):
 
