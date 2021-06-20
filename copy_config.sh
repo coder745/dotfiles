@@ -26,14 +26,16 @@ then
   mkdir -p $ctags_path
 fi
 
-echo "Backup and copy: .vimrc, .bash_aliases, .functions, .terminal_changes, .tmux.conf, .ctags, and .global_ignore"
+# Setup the Global .gitignore:
+/$dir/setup_global_gitignore.sh
+
+echo "Backup and copy: .vimrc, .bash_aliases, .functions, .terminal_changes, .tmux.conf, and .ctags.
 backup_and_link $dir ".vimrc"
 backup_and_link $dir ".bash_aliases"
 backup_and_link $dir ".functions"
 backup_and_link $dir ".terminal_changes"
 backup_and_link $dir ".tmux.conf"
 backup_and_link $dir ".ctags"
-backup_and_link $dir ".global_ignore"
 
 backup_config "init.vim"
 cat $dir/.vimrc > $dir/init.vim
