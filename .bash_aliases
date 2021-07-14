@@ -38,6 +38,7 @@ alias wget='wget -c'
 alias gs='clear && git status'
 alias gss='git stash save'
 alias gjunk="git add . && git stash save 'junk'"
+alias ci="git add . && git commit -m 'ci'"
 
 alias cb='git branch | grep "*"'
 alias cleanbranches="git branch | sed -e 's/^[ ]*//' | grep -ivE '^\* master|^master$|^\* main|^main$' | xargs git branch -d"
