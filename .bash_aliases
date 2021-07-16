@@ -43,6 +43,8 @@ alias ci="git add . && git commit -m 'ci'"
 alias cb='git branch | grep "*"'
 alias cleanbranches="git branch | sed -e 's/^[ ]*//' | grep -ivE '^\* master|^master$|^\* main|^main$' | xargs git branch -d"
 
+alias drestore=`dotnet restore --interactive $1`
+
 #### Programming ####
 alias be='bundle exec'
 alias ber='bundle exec rspec'
